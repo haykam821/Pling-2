@@ -11,7 +11,7 @@ jobs:
       - uses: actions/cache@v2
         with:
          path: .gradle/loom-cache
-         key: ${{runner.os}}-loom-cache-${{hashFiles("**/build.gradle")}}
+         key: ${{runner.os}}-loom-cache-${{hashFiles('**/build.gradle')}}
       - uses: actions/setup-java@v1
         with: 
           java-version: 1.8
