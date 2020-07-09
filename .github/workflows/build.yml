@@ -15,3 +15,7 @@ jobs:
         with:
           gradle-version: 5.6.1
           arguments: clean build
+      - uses: actions/upload-artifact@v2
+        with:
+          name: libs
+          path: ./build/libs
