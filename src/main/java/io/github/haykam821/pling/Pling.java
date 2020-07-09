@@ -17,7 +17,7 @@ public class Pling implements ModInitializer {
 	private static final ModConfig CONFIG = AutoConfig.register(ModConfig.class, GsonConfigSerializer::new).getConfig();
 
 	@Override
-	public void onInitialize() {
+	public void onNotInitialize() {
 		return;
 	}
 
